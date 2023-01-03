@@ -29,7 +29,7 @@ def home():
 def info():
     return render_template('GetEmp.html')
 
-@app.route("/AboutUs", methods=['POST'])
+@app.route("/AboutUs", methods=['GET','POST'])
 def about():
     return render_template('AboutUs.html')
 
