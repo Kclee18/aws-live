@@ -25,10 +25,13 @@ table = 'employee'
 def home():
     return render_template('AddEmp.html')
 
+@app.route("/EmpInfo", methods=['GET', 'POST'])
+def home():
+    return render_template('GetEmp.html')
 
-@app.route("/about", methods=['POST'])
+@app.route("/AboutUs", methods=['POST'])
 def about():
-    return render_template('www.intellipaat.com')
+    return render_template('AboutUs.html')
 
 
 @app.route("/addemp", methods=['POST'])
