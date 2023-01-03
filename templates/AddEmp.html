@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-COM | Register Employee Information</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="icon" href="../Images/Logo.png" type="image/gif" sizes="8x6">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+	body
+	{
+		font-family: avenir;
+		
+	}
+</style>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+	<img src="../Images/Logo.png" alt="Logo" width="30" height="23" class="d-inline-block"> E-COM
+	</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/GetEmp">Employee Info</a>
+		</li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+			<div class="container">
+				<br>  
+				<p class="text-center" style="color: DodgerBlue;font-size:24px;">Register Employee Data / Info</p>
+				<hr>
+				<div class="row justify-content-center">
+				<div class="col-md-6">
+				<div class="card">
+				<header class="card-header">
+					
+					<h4 class="card-title mt-2">Sign up</h4>
+				</header>
+				<article class="card-body">
+				<form action="/addemp" class="form-signup" autocomplete="on" method = "POST" enctype="multipart/form-data">
+					<div class="form-row">
+						<div class="col form-group">
+							<label>First name </label>   
+							  <input type="text" name="first_name" class="form-control" placeholder="">
+						</div> <!-- form-group end.// -->
+						<div class="col form-group">
+							<label>Last name</label>
+							  <input type="text" name="last_name" class="form-control" placeholder=" ">
+						</div> <!-- form-group end.// -->
+					</div> <!-- form-row end.// -->
+					<div class="form-group">
+						<label>Email address</label>
+						<input type="email" class="form-control" placeholder="">
+						<small class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>
+					 <!-- form-group end.// -->
+					<div class="form-group d-inline-block">
+						<label class="form-check form-check-inline">Gender :</label>
+						<label class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="gender" value="M">
+						  <span class="form-check-label"> Male </span>
+						</label>
+						<label class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="gender" value="F">
+						  <span class="form-check-label"> Female</span>
+						</label>
+					</div>
+					<div class="form-group">
+						<label>Primary Skills</label>
+						<input class="form-control" name="pri_skill" type="text">
+					</div> 
+					<div class="form-group">
+						<label>Address</label>
+						<input class="form-control" name="location" type="text">
+					</div>
+					<div class="form-group">
+						<label>Image</label>
+						<input type="file" name="emp_image_file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-block"> Register  </button>
+					</div> <!-- form-group// -->      
+					<small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>                                          
+				</form>
+				</article> <!-- card-body end .// -->
+				</div> <!-- card.// -->
+				</div> <!-- col.//-->
+				
+				</div> <!-- row.//-->
+				<hr>
+				<p class="mt-1 mb-1 text-muted text-center"><strong>E-Com</strong> Copyright &copy; 2019 - <?php echo date("Y");?>. All rights reserved.</p>
+                <p class=" mb-2 text-muted text-center">Powered By <img height="20px" width="38px" src="../Images/Logo.png"></p>
+				</div> 
+			</div>
+</body>
+</html>
